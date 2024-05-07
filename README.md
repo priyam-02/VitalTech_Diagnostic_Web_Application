@@ -1,48 +1,66 @@
-# Outdoor Adventure Meetup
+# VitalTech: Diagnostic Web Application
 
-Outdoor Adventure Meetup is a vibrant web application designed to bring together enthusiasts of outdoor activities. 
-From seasoned explorers to newcomers, our platform offers a unique space for individuals to discover, share, and participate in outdoor adventures. 
-Whether it’s local hiking, mountain biking, or international expeditions, there’s something for everyone here. 
+Introducing HealthApp, an innovative web application designed to enhance the diagnostic accuracy for respiratory diseases like Tuberculosis and COVID-19 using advanced Machine Learning technology. Aimed at both patients and doctors, HealthApp streamlines the process of disease diagnosis, making healthcare more accessible and efficient.
 
 ## Features
-1. **User Profiles:** Create and manage your personal profile to track your events and RSVPs.
-2. **Event Management:** Users can create, discover, and RSVP to events. Each event includes detailed information like date, time, and location.
-3. **Community Engagement:** Engage with a community that shares your enthusiasm for the outdoors. Share experiences and connect with fellow adventurers.
-4. **Responsive Design:** Enjoy a seamless experience across all devices, ensuring you can access the platform wherever you go.
+1. **Client Application:** Interact with the user-friendly front-end to access and manage health data.
+2. **Server Functionality:** Robust back-end server handles data processing and integration.
+3. **ML Server:** Advanced machine learning server offers predictions and insights based on health data.
+4. **Responsive Design:** Accessible across all devices, providing a seamless experience whether at home or on the go.
 
 ## Technologies
 1. **Node.js:** The core runtime environment for running JavaScript on the server side.
 2. **Express:** A web application framework for Node.js, used to build web applications and APIs.
-3. **MongoDB:** A NoSQL database used to store application data.
-4. **EJS:** A templating engine used in the views folder for generating HTML markup dynamically.
-5. **bcrypt:** A library to help you hash passwords securely.
-6. **Git:** Version control system to handle the project's development across multiple stages and versions.
-7. **npm:** Node package manager for handling project dependencies.
-8. **HTML/CSS/JavaScript:** Used for structuring, styling, and functionality of the public-facing pages.
-9. **JSON:** Data interchange format used within package.json and possibly for APIs.
-10. **Middleware Functions:** Custom or third-party middleware used within Express for various backend functionalities like logging, request processing, etc.
+3. **React.js:** Used for structuring, styling, and functionality of the public-facing pages.
+4. **MongoDB:** A NoSQL database used to store application data.
+5. **EJS:** A templating engine used in the views folder for generating HTML markup dynamically.
+6. **Python:** Powers our machine learning server using libraries like TensorFlow and Flask.
+7. **bcrypt:** A library to help you hash passwords securely.
+8. **Git:** Version control system to handle the project's development across multiple stages and versions.
+9. **npm:** Node package manager for handling project dependencies. 
 
 ## Structure Description
-1. **Models:** Contains data models for the application, interacting with databases or other data sources.
-2. **Views:** Holds template files for rendering HTML.
-3. **Controllers:** Manages the application logic, linking the models and views.
-4. **Routes:** Defines the URLs the web application handles and links them to specific controller functions.
-5. **Public:** Stores static files that are directly accessible via the web browser.
-6. **Middlewares:** Implements functions that have access to the HTTP request and response objects and the next middleware function in the application’s request-response cycle.
+1. **Models:** Define the schema for data that the application handles.
+2. **Views:** EJS templates for rendering the user interface.
+3. **Controllers:** Business logic to connect models with views.
+4. **Routes:** URL endpoints of the application which map to controller logic.
+5. **Public:** Contains static files like images, CSS, and JavaScript.
+6. **Middlewares:** Custom functions to process requests, like authentication checks.
 
 ## Setup
-_Prerequisites_
+### _Prerequisites_
 1. Node.js - Ensure you have Node.js installed on your machine. It can be downloaded from Node.js official website.
 2. MongoDB - Make sure MongoDB is installed and running on your machine. Instructions can be found on the MongoDB official website.
 
-_Installation_
+### _Installation_
 1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Install the required dependencies uisng terminal: Enter **_npm install_**
-4. Replace 'your-database-name' and 'your-secret-key' with your database name and a secret key in the app.js file: DB_URI=mongodb://localhost:27017/your-database-name
-SESSION_SECRET=your-secret-key
-5. Run the application using terminal:Enter **_node app.js_** or **_node app_**
-6. Open your browser and go to **_http://localhost:3000_** to view the application.
+2. There are 3 folders in this repository
+
+    - client/
+    - server/
+    - ml_server/
+
+    #### **_Client_**
+
+    1. cd client
+    2. Run npm i
+    3. Run npm start
+
+    #### **_Server_**
+
+    1. cd server
+    2. Run npm i
+    3. Run node index.js
+
+    #### **_ml_server_**
+
+    1. cd ml_server
+    2. pip install flask tensorflow numpy opencv-python flask-cors
+    3. python/python3 vital_health_check.py
+
+This will start 3 servers on your system
+
+3. Open your browser and go to **_http://localhost:3000_** to view the application.
 
 _Additional Notes_
 1. Ensure MongoDB is running on your system to connect to the database successfully.
@@ -51,50 +69,24 @@ _Additional Notes_
 ## Website Images
 
 ### 1. **Home Page:**
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 29 31 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/d1984d48-1904-4990-902a-d5f33c7870ed"></kbd>
-
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 29 42 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/2a8c3147-93dc-41b9-99c2-950aebc21c50"></kbd>
+<kbd><img width="1512" alt="Screenshot 2024-05-07 at 6 42 28 PM" src="https://github.com/priyam-02/VitalTech_Diagnostic_Web_Application/assets/108848788/35527a93-ebd9-4d67-9932-4917fd17c8a0"></kbd>
 
 
 
-### 2. **Events & Events Details Page:**
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 29 58 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/8ec1c618-6c3c-4607-9d77-8ae296c97dcf"></kbd>
+### 2. **Login/Sign Up page [Patients & Doctors]:**
+<kbd><img width="1512" alt="Screenshot 2024-05-07 at 6 42 36 PM" src="https://github.com/priyam-02/VitalTech_Diagnostic_Web_Application/assets/108848788/f7645142-985c-4575-af1a-efa8db5f8e21"></kbd>
 
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 30 09 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/01aa346f-aa29-4187-8ebf-9b7273d88abb"></kbd>
+<kbd><img width="1512" alt="Screenshot 2024-05-07 at 6 42 41 PM" src="https://github.com/priyam-02/VitalTech_Diagnostic_Web_Application/assets/108848788/8a951437-fc60-478f-a46d-e47a294041ee"></kbd>
 
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 30 15 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/dd59c41d-ea32-4734-b54d-fa5dd7b9068b"></kbd>
+<kbd><img width="1512" alt="Screenshot 2024-05-07 at 6 42 46 PM" src="https://github.com/priyam-02/VitalTech_Diagnostic_Web_Application/assets/108848788/3653e2e9-f496-41d0-ae96-de430d595dbd"></kbd>
 
-
-
-### 3. **Login/Sign Up page:**
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 30 41 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/c43faa6c-efa5-4c15-9334-5a6b8ca5d678"></kbd>
-
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 30 51 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/89c8ee3d-bcd1-4aa4-86e2-da4432beabdf"></kbd>
+<kbd><img width="1512" alt="Screenshot 2024-05-07 at 6 42 53 PM" src="https://github.com/priyam-02/VitalTech_Diagnostic_Web_Application/assets/108848788/7630b068-490d-4219-af0f-142f46370e13"></kbd>
 
 
 
-### 4. **Create New Event Page:**
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 30 23 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/df6d3761-3c66-4382-8b1f-f418a6bce78c"></kbd>
+### 3. **Dashboard:**
+<kbd><img width="1512" alt="Screenshot 2024-05-07 at 6 43 05 PM" src="https://github.com/priyam-02/VitalTech_Diagnostic_Web_Application/assets/108848788/3647d704-6104-44b5-899c-481b92cb897b"></kbd>
 
+<kbd><img width="1512" alt="Screenshot 2024-05-07 at 6 43 14 PM" src="https://github.com/priyam-02/VitalTech_Diagnostic_Web_Application/assets/108848788/3fc1db0c-af5a-4dac-843e-b5be93a05e2c"></kbd>
 
-
-### 5. **Profile Page:**
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 30 30 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/5b7aa17e-09d0-478e-8ddb-0c2e13d28540"></kbd>
-
-
-
-### 6. **About Us Page:**
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 31 09 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/0c7027c3-fcc3-4162-b717-486b88369dbb"></kbd>
-
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 31 16 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/ea1d13ee-1e7e-4c43-9670-5dc9c0ab4e6c"></kbd>
-
-
-
-### 7. **Contact Us Page:**
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 31 23 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/2345f715-29b0-44bd-a888-4025a0abbe1f"></kbd>
-
-<kbd><img width="1512" alt="Screenshot 2024-05-07 at 12 31 30 PM" src="https://github.com/priyam-02/Outdoor_Adventure_Meetup/assets/108848788/bb7b378d-00fd-4447-aaec-44e8d71d9533"></kbd>
-
-
-
-
+<kbd><img width="1512" alt="Screenshot 2024-05-07 at 6 43 22 PM" src="https://github.com/priyam-02/VitalTech_Diagnostic_Web_Application/assets/108848788/2a5a7da1-f457-476f-8c22-738ae7db2395"></kbd>
