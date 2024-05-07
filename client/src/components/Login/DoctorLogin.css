@@ -1,0 +1,55 @@
+.hero-section {
+    background: url('./Images/loginn.jpg') no-repeat center center/cover; 
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+    margin-bottom: 20px; 
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.doctor-login-container {
+    max-width: 400px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.doctor-login-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.doctor-login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.doctor-login-form input, .doctor-login-form button {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.doctor-login-form button {
+    color: white;
+    background-color: #4A90E2;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.doctor-login-form button:hover {
+    background-color: #357ABD;
+}

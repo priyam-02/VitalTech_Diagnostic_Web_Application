@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;  /* 1fr takes the remaining space, auto for the footer height */
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;  /* Important for handling overflow content */
+  }
+  
+  .footer {
+    grid-row-start: 2; /* Ensures the footer is always the last item */
+    background: #4A90E2;
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    borderTop: 1px solid #ddd;
+  }
+  

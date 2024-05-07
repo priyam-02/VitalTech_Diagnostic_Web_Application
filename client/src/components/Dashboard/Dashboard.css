@@ -1,0 +1,128 @@
+/* Main Dashboard Layout */
+.lay {
+    background-color: #ecf0f3; /* Soft off-white background */
+    color: #333;
+    line-height: 1.6;
+    
+
+    width: 70%; /* Adjust based on your preference */
+     /* Maximum width of the layout */
+    padding: 20px;
+    border-radius: 10px;
+    background: #ecf0f3;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), 
+                -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+/* Styling for Heading */
+.dashboard {
+    text-align: center;
+    color: #6c7a89; /* Soft blue-gray */
+    padding-bottom: 20px;
+}
+
+/* Input Field Styles */
+.input-file {
+    width: 98%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: solid 1px #ccc;
+    box-shadow: inset 8px 8px 8px #cbced1, 
+                inset -8px -8px 8px #ffffff;
+}
+
+/* Button Styling */
+.btn-upload {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 15px;
+    background-color: #8a97a6;
+    color: #FFFFFF;
+    box-shadow: 6px 6px 12px #b8c2cc, 
+                -6px -6px 12px #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-upload:hover {
+    background-color: #769fcd; /* Light blue for hover */
+}
+
+/* Card Design for Images */
+.card {
+    background: #ecf0f3;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), 
+                -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.img-responsive {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Comments Styling */
+.comments-section {
+    margin-top: 15px;
+}
+
+.comment {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px #babecc, 
+                -4px -4px 8px #ffffff;
+    margin-top: 10px;
+}
+
+/* Form Style Enhancements */
+.comment {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ecf0f3;
+    box-shadow: inset 8px 8px 8px #cbced1, 
+                inset -8px -8px 8px #ffffff;
+}
+
+.comment button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #8a97a6;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 6px 6px 12px #b8c2cc, 
+                -6px -6px 12px #ffffff;
+}
+
+.comment button:hover {
+    background-color: #769fcd;
+}
+
+.analyze{
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #8a97a6;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 6px 6px 12px #b8c2cc, 
+                -6px -6px 12px #ffffff;
+}
+
+.analyze:hover {
+    background-color: #769fcd; /* Light blue for hover */
+}
